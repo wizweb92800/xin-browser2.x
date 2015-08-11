@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<header>
+	<title>Nouvel Onglet</title>
+	<meta charset="utf-8">
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+	<link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,300' rel='stylesheet' type='text/css'>
+	<link href="newtab.css" rel="stylesheet" type="text/css">
+	<link rel="icon" type="image/png" href="favicon.png">
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+</header>
+
+<body>
+	<div id="cover_page">
+		<div id="middle_aligned">
+			<br><br><img src="xb_newtab_logo.png" width="256px" height="256px" /><br><br><br><br>
+			<div id="sbox">
+				<input type="textbox" id="srch" class="srchbox" placeholder="Rechercher sur le web...">
+				<script type="text/javascript">
+					$('.srchbox').keypress(function(event){
+						var keycode = (event.keyCode ? event.keyCode : event.which);
+						if(keycode == '13'){
+							var ctbox = $('#srch').val();
+							window.location.href = "http://www.google.fr/search?q=" + ctbox;
+						}
+						event.stopPropagation();
+					});
+				</script>
+				<a class="search_button">Rechercher</a>
+			</div>
+			<br>
+		</div>
+		<div id="down_bar">
+			<br><br>
+				<a class="mnu_btn" href="http://www.xinloxx.cf/"><img src="home.png" width="64px" height="64px" /><br>Accueil</a>
+				<a class="mnu_btn" href="#" onclick="alert('xboptn://open/downloads')"><img src="download.png" width="64px" height="64px" /><br>Téléchargements</a>
+				<a class="mnu_btn" href="#" onclick="alert('xboptn://open/history')"><img src="history.png" width="64px" height="64px" /><br>Historique</a>
+				<a class="mnu_btn" href="#" onclick="alert('xboptn://open/favourites')"><img src="favourites.png" width="64px" height="64px" /><br>Favoris</a>
+				<a class="mnu_btn" href="#" onclick="alert('xboptn://open/settings')"><img src="settings.png" width="64px" height="64px" /><br>Paramètres</a>
+				<a class="mnu_btn" href="#" onclick="alert('xboptn://open/about')"><img src="about.png" width="64px" height="64px" /><br>A propos</a>
+			<br><br>
+		</div>
+	</div>
+	
+	<a class="officialwebsite" href="http://www.xinloxx.cf/">Site Web</a>
+	<a class="webapps" href="http://www.xinloxx.cf/xinbrowser.html">Applications</a>
+</body>
+</html>

@@ -1,0 +1,88 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="My" GeneratedClassName="MySettings" UseMySettingsClassName="true">
+  <Profiles />
+  <Settings>
+    <Setting Name="Favourites" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="History" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="Downloads" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="SearchEngineName" Type="System.String" Scope="User">
+      <Value Profile="(Default)">Google</Value>
+    </Setting>
+    <Setting Name="SearchEngineUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.google.fr/search?q=</Value>
+    </Setting>
+    <Setting Name="HomeUrl" Type="System.String" Scope="User">
+      <Value Profile="(Default)">http://www.google.fr/</Value>
+    </Setting>
+    <Setting Name="NewTabSet" Type="System.String" Scope="User">
+      <Value Profile="(Default)">optn:home</Value>
+    </Setting>
+    <Setting Name="OpenAppTabSet" Type="System.String" Scope="User">
+      <Value Profile="(Default)">optn:searchpage</Value>
+    </Setting>
+    <Setting Name="appbackgroundstyle" Type="System.String" Scope="User">
+      <Value Profile="(Default)">optn:fillgradient</Value>
+    </Setting>
+    <Setting Name="appbackgroundcolor1" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlDark</Value>
+    </Setting>
+    <Setting Name="appbackgroundcolor2" Type="System.Drawing.Color" Scope="User">
+      <Value Profile="(Default)">ControlDarkDark</Value>
+    </Setting>
+    <Setting Name="AskForSavingDownloads" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="DownloadsPlace" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="CheckForUpdates" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="EnableBetaUpdates" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="CurrentTheme" Type="System.String" Scope="User">
+      <Value Profile="(Default)">xinbrowser</Value>
+    </Setting>
+    <Setting Name="JsPopUpBlockedPage" Type="System.Collections.Specialized.StringCollection" Scope="User">
+      <Value Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" /&gt;</Value>
+    </Setting>
+    <Setting Name="Optn_LocalFiles" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Optn_Clipboard" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Optn_Scripts" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Optn_Javascript" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Optn_Insecure" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Optn_Cache" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Optn_Cookies" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+    <Setting Name="Optn_GPU" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">False</Value>
+    </Setting>
+    <Setting Name="Optn_BetaUpdate" Type="System.Boolean" Scope="User">
+      <Value Profile="(Default)">True</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

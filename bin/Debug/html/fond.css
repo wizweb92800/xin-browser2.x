@@ -1,0 +1,82 @@
+body{
+background:rgba(20,90,120,1);
+background-attachment : fixed;
+position: relative;
+z-index:4;
+
+}
+    
+.div{
+  width:140px;
+  height:140px; 
+  border-radius:50%;
+  border-style:dotted;
+  border-width:30px 30px 30px 30px;
+  border-color:transparent;
+  border-top-color:hsla(170,100%,32%,1);
+  border-bottom-color:hsla(170,100%,32%,1);
+  border-right-color:hsla(170,100%,32%,1);
+  margin: -140px 0px 0px -120px;
+  position:fixed;
+  top:50%;
+  left:50%;
+  z-index:0;
+  -webkit-animation: 2s rot infinite linear;
+-moz-animation: 2s rot infinite linear;
+ animation: 2s rot infinite linear;  
+}
+
+.div:nth-child(2){
+  width:140px;
+  height:140px; 
+  border-radius:50%;
+  border-style:solid;
+  border-width:30px 30px 30px 30px;
+  border-right-color:hsla(170,100%,32%,1);
+  border-top-color:hsla(170,100%,32%,1);
+  border-bottom-color:hsla(170,100%,32%,1);
+  margin: -140px 0px 0px -120px;
+  position:fixed;
+  top:50%;
+  left:50%;
+  z-index:2;
+  -webkit-animation: 5s rotIvs infinite linear;
+-moz-animation: 5s rotIvs infinite linear;
+ animation: 5s rotIvs infinite linear;  
+}
+
+@keyframes rot{
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+@-webkit-keyframes rot{
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+@-moz-keyframes rot{
+  100%{
+    transform:rotate(360deg);
+  }
+}
+
+@keyframes rotIvs{
+  100%{
+    transform:rotate(-360deg);
+  }
+}
+
+@-webkit-keyframes rotIvs{
+  100%{
+    transform:rotate(-360deg);
+  }
+}
+
+@-moz-keyframes rotInverse{
+  100%{
+    transform:rotate(-360deg);
+  }
+}

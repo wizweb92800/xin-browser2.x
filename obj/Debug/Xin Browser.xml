@@ -1,0 +1,88 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+XinBrowser
+</name>
+</assembly>
+<members>
+<member name="P:Xin_Browser.My.Resources.Resources.ResourceManager">
+	<summary>
+  Retourne l'instance ResourceManager mise en cache utilisée par cette classe.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.Culture">
+	<summary>
+  Remplace la propriété CurrentUICulture du thread actuel pour toutes
+  les recherches de ressources à l'aide de cette classe de ressource fortement typée.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.application_osx">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.application_xp">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.cd">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.chrome_throbber_fast_16">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_excel">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_extension_swf">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_extension_torrent">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_extension_ttf">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_install">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_music">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_pdf">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_picture">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_video">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_word">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.file_zip">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:Xin_Browser.My.Resources.Resources.page_white">
+	<summary>
+  Recherche une ressource localisée de type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:Xin_Browser.My.Resources.Resources">
+	<summary>
+  Une classe de ressource fortement typée destinée, entre autres, à la consultation des chaînes localisées.
+</summary>
+</member>
+</members>
+</doc>

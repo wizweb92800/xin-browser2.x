@@ -1,0 +1,123 @@
+﻿<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="fond.css" />
+        <link rel="shortcut icon" href="logo.png">
+        <title>Paramètres</title>
+    </head>
+    
+    <body>
+<div class="div"></div>
+<div class="div"></div>
+        <header>
+        <ul id="menu_horizontal">
+            <li class="bouton_gauche">
+                <a href="parametres.html">Paramètres</a>
+            </li> 
+            <li class="bouton_gauche">
+                <a href="outils.html">Outils</a>
+            </li>
+            <li class="bouton_gauche">
+                <a href="a_propos.html">A propos</a>
+            </li> 
+            <li class="bouton_gauche">
+                <a href="contributeurs.html">contributeurs</a>
+            </li>
+            <li class="bouton_gauche">
+                <a href="contact.html">Contact</a>
+            </li>
+            <li class="bouton_gauche">
+                <a href="partenariats.html">Parteneriats</a>
+            </li>
+            <li class="bouton_gauche">
+                <a href="mise_a_jour.html">Mise à jour</a>
+            </li>    
+			<li class="bouton_gauche">
+                <a href="CGU.html">CGU</a>
+            </li>  
+        </ul>
+        </header>
+        <article>
+        <div id="parametres"><h1>Paramètres:</h1></div>
+		<br><br><input style="left:30px" class="bouton" type="button" value="Réinitialiser les paramètres" onclick="alert('xboptn://resetall')"><br><br>
+            <div id="general"><h2>Général:</h2>
+                <p>Page d'accueil: 
+                    <input type="textbox" id="homepageTextBox"> 
+                    <input class="bouton_ok" type="button" value="Ok" onclick="alert('xboptn://sethomepage')">
+                </p>
+                <p>Moteur de recherche:<br>  
+                    <input type="radio" id="GoogleSE" onclick="alert('xboptn://setsearchengine/Google')">Google<br>  
+                    <input type="radio" id="BingSE" onclick="alert('xboptn://setsearchengine/Bing')">Bing<br>  
+                    <input type="radio" id="Yahoo!SE" onclick="alert('xboptn://setsearchengine/Yahoo!')">Yahoo!<br> 
+                    <input type="radio" id="QwantSE" onclick="alert('xboptn://setsearchengine/Qwant')">Qwant<br> 
+                    <input type="radio" id="DuckDuckGoSE" onclick="alert('xboptn://setsearchengine/DuckDuckGo')">DuckDuckGo<br> 
+                </p>
+                <p>Téléchargements:<br> 
+                    <input type="checkbox" id="autosavedownload" onclick="alert('xboptn://setdownload/' + document.getElementById('autosavedownload').checked)">Choisir où enregistrer les fichiers à chaque téléchargement<br> 
+                </p>
+                <p>Au démarrage:<br>  
+                    <input type="radio" id="optn:newtabpage" onclick="alert('xboptn://sethomesetting/newtabpage')">Page 'Nouvel Onglet'<br>  
+                    <input type="radio" id="optn:home" onclick="alert('xboptn://sethomesetting/home')">Page d'accueil<br>  
+                    <!--<input type="radio" id="optn:newtabs" onclick="alert('xboptn://sethomesetting/newtabs')">Ensemble de pages...<br>-->
+                    <input type="radio" id="optn:blank" onclick="alert('xboptn://sethomesetting/blank')">Page blanche<br> 
+                </p>
+				<p>Thème:<br>
+					<input type="radio" id="optn:theme_xindarkblue" onclick="alert('xboptn://settheme/xindarkblue')">Xin Dark Blue Theme<br>  
+                    <input type="radio" id="optn:theme_xindarkorange" onclick="alert('xboptn://settheme/xindarkorange')">Xin Dark Orange Theme<br>  
+                    <input type="radio" id="optn:theme_xindarkgreen" onclick="alert('xboptn://settheme/xindarkgreen')">Xin Dark Green Theme<br> 
+				</p>
+            </div>
+
+            <div id="navigation"><h2>Navigation:</h2>
+                <p>Autorisations:<br>  
+                    <input type="checkbox" id="navauto_localfiles" onclick="alert('xboptn://setlocalfiles/' + document.getElementById('navauto_localfiles').checked)"> Accès et gestion des fichiers locaux<br>  
+                    <input type="checkbox" id="navauto_clipboard" onclick="alert('xboptn://setclipboard/' + document.getElementById('navauto_clipboard').checked)"> Accès au presse-papiers<br>  
+                    <input type="checkbox" id="navauto_scripts" onclick="alert('xboptn://setscripts/' + document.getElementById('navauto_scripts').checked)"> Autoriser les scripts<br>  
+                    <input type="checkbox" id="navauto_javascript" onclick="alert('xboptn://setjavascript/' + document.getElementById('navauto_javascript').checked)"> Activer Javascript<br> 
+                </p>
+                <p>Données:<br>  
+                    <input type="checkbox" id="navdata_insecure" onclick="alert('xboptn://setinsecure/' + document.getElementById('navdata_insecure').checked)"> Autoriser le contenu insécurisé<br>   
+                    <input type="checkbox" id="navdata_cache" onclick="alert('xboptn://setcache/' + document.getElementById('navdata_cache').checked)"> Autoriser le cache<br>  
+                    <input type="checkbox" id="navdata_cookies" onclick="alert('xboptn://setcookies/' + document.getElementById('navdata_cookies').checked)">  Autoriser les cookies
+                    <input class="bouton" type="button" value="Liste des cookies" onclick="alert('xboptn://cookieslist')"><br> 
+                </p>
+                <p>Exportation de données: 
+                    <input class="bouton" type="button" value="Exporter mes favoris" onclick="alert('xboptn://exportfavourites')"> 
+                    <input class="bouton" type="button" value="Exporter mon historique" onclick="alert('xboptn://exporthistory')"><br> 
+                </p>
+                <p>Importations de données: 
+                    <input class="bouton" type="button" value="Importer des favoris" onclick="alert('xboptn://importfavourites')"> 
+                    <input class="bouton" type="button" value="Importer un historique" onclick="alert('xboptn://importhistory')"><br> 
+                </p>
+            </div>
+
+            <div id="systeme"><h2>Système:</h2>
+                <p>
+                    <input type="checkbox" id="sys_gpu" onclick="alert('xboptn://setgpu/' + document.getElementById('sys_gpu').checked)">Autoriser l'accélération matérielle (GPU)<br> 
+                </p>
+                <p>Programme:<br>  
+                    <input type="checkbox" id="syspgrm_betas" onclick="alert('xboptn://setbetaupdates/' + document.getElementById('syspgrm_betas').checked)"> Autoriser les versions bêtas<br> 
+                </p>
+            </div>
+        </article>
+        
+            <ul id="menu">
+                <li class="bouton_gauche">
+                    <a href="#general">Général</a>
+                </li> 
+                <li class="bouton_gauche">
+                    <a href="#navigation">Navigation</a>
+                </li> 
+                <li class="bouton_gauche">
+                    <a href="#systeme">Système</a>
+                </li> 
+            </ul>
+        
+
+        
+        </body>
+
+</html>

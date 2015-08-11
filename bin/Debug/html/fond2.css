@@ -1,0 +1,6 @@
+body{
+background:rgba(20,90,120,1);
+background-attachment : fixed;
+position: relative;
+z-index:4;
+}

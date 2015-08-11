@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{511EFE95-5CDC-46D4-9272-210625A2DE83}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Xin_Browser.My.MyApplication</StartupObject>
+    <RootNamespace>Xin_Browser</RootNamespace>
+    <AssemblyName>Xin Browser</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <PublishUrl>publier\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Xin Browser.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42032,42036</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Xin Browser.xml</DocumentationFile>
+    <NoWarn>41999,42016,42017,42018,42019,42032,42036</NoWarn>
+    <WarningLevel>1</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>xin browser new logo.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AlphaGradientPanel">
+      <HintPath>..\..\..\..\..\Downloads\AlphaGradientPanel_src\AlphaGradientPanel\AlphaGradientPanel\bin\Release\AlphaGradientPanel.dll</HintPath>
+    </Reference>
+    <Reference Include="Awesomium.Core, Version=1.7.3.0, Culture=neutral, PublicKeyToken=e1a0d7c8071a5214">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Awesomium.Windows.Forms, Version=1.7.3.0, Culture=neutral, PublicKeyToken=9bd24830fbe304a0, processorArchitecture=x86">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ChreneLib">
+      <HintPath>..\..\..\..\DLL for Visual Studio 2010 Express\ChreneLib.dll</HintPath>
+    </Reference>
+    <Reference Include="MdiTabControl">
+      <HintPath>..\..\..\..\..\Downloads\MDITabControl\MdiTabControl\MdiTabControl\bin\Debug\MdiTabControl.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="VIBlend.WinForms.Controls, Version=10.1.0.0, Culture=neutral, PublicKeyToken=6feea38fef5ea0cf, processorArchitecture=MSIL">
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="VIBlend.WinForms.Utilities, Version=10.1.0.0, Culture=neutral, PublicKeyToken=970a5af59bc48043">
+      <Private>True</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AddRemoveFavForm.Designer.vb">
+      <DependentUpon>AddRemoveFavForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="AddRemoveFavForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ApplicationEvents.vb" />
+    <Compile Include="CodeViewer.Designer.vb">
+      <DependentUpon>CodeViewer.vb</DependentUpon>
+    </Compile>
+    <Compile Include="CodeViewer.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="DownloadsForm.Designer.vb">
+      <DependentUpon>DownloadsForm.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadsForm.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DownloadTicket.Designer.vb">
+      <DependentUpon>DownloadTicket.vb</DependentUpon>
+    </Compile>
+    <Compile Include="DownloadTicket.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FavHistList.Designer.vb">
+      <DependentUpon>FavHistList.vb</DependentUpon>
+    </Compile>
+    <Compile Include="FavHistList.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="JsAlertBox.Designer.vb">
+      <DependentUpon>JsAlertBox.vb</DependentUpon>
+    </Compile>
+    <Compile Include="JsAlertBox.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgEraseFavourites.Designer.vb">
+      <DependentUpon>MsgEraseFavourites.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MsgEraseFavourites.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MsgEraseHistory.Designer.vb">
+      <DependentUpon>MsgEraseHistory.vb</DependentUpon>
+    </Compile>
+    <Compile Include="MsgEraseHistory.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="Settings.Designer.vb">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TabWebBrowser.Designer.vb">
+      <DependentUpon>TabWebBrowser.vb</DependentUpon>
+    </Compile>
+    <Compile Include="TabWebBrowser.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="UrlLister.Designer.vb">
+      <DependentUpon>UrlLister.vb</DependentUpon>
+    </Compile>
+    <Compile Include="UrlLister.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="WebsiteInfoBulle.Designer.vb">
+      <DependentUpon>WebsiteInfoBulle.vb</DependentUpon>
+    </Compile>
+    <Compile Include="WebsiteInfoBulle.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="AddRemoveFavForm.resx">
+      <DependentUpon>AddRemoveFavForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CodeViewer.resx">
+      <DependentUpon>CodeViewer.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloadsForm.resx">
+      <DependentUpon>DownloadsForm.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DownloadTicket.resx">
+      <DependentUpon>DownloadTicket.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FavHistList.resx">
+      <DependentUpon>FavHistList.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="JsAlertBox.resx">
+      <DependentUpon>JsAlertBox.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgEraseFavourites.resx">
+      <DependentUpon>MsgEraseFavourites.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MsgEraseHistory.resx">
+      <DependentUpon>MsgEraseHistory.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Settings.resx">
+      <DependentUpon>Settings.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TabWebBrowser.resx">
+      <DependentUpon>TabWebBrowser.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UrlLister.resx">
+      <DependentUpon>UrlLister.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WebsiteInfoBulle.resx">
+      <DependentUpon>WebsiteInfoBulle.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chrome_throbber_fast_16.gif" />
+    <None Include="Resources\compress.png" />
+    <None Include="Resources\office_exceldoc0713_32x32.png" />
+    <None Include="Resources\office_worddoc0713_32x32.png" />
+    <None Include="Resources\office_worddoc9703_32x32.png" />
+    <None Include="Resources\win_documentformat_ods_32x32.png" />
+    <None Include="Resources\win_documentformat_pdf_32x32.png" />
+    <None Include="Resources\win_musicfile_x32.png" />
+    <None Include="Resources\win_picture_x32.png" />
+    <None Include="Resources\win_product_32x32.png" />
+    <None Include="Resources\win_videofile_x32.png" />
+    <None Include="Resources\apple.png" />
+    <None Include="Resources\file_extension_torrent.png" />
+    <None Include="Resources\file_extension_ttf.png" />
+    <None Include="Resources\file_extension_swf.png" />
+    <None Include="Resources\application_xp.png" />
+    <None Include="Resources\application_osx.png" />
+    <None Include="Resources\cd.png" />
+    <None Include="Resources\page_white.png" />
+    <Content Include="xin browser new logo.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 et x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
